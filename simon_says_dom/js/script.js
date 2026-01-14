@@ -22,7 +22,7 @@ randomNumbers.forEach(num => {
 });
 
 //countdown//
-let timeLeft = 8;
+let timeLeft = 30;
 countdownEl.textContent = timeLeft;
 const timer = setInterval(() => {
   timeLeft--;
