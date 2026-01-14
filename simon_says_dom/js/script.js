@@ -53,4 +53,18 @@ answersForm.addEventListener('submit', function (e) {
 
   checkResults(userNumbers);
 });
+ 
+//fase finale: confrontare gli array//
+function checkResults(userNumbers) {
+  const guessedNumbers = [];
 
+  randomNumbers.forEach(num => {
+    if (userNumbers.includes(num)) {
+      guessedNumbers.push(num);
+    }
+  });
+
+  messageEl.textContent = `
+    Hai indovinato ${guessedNumbers.length} numeri: ${guessedNumbers.join(', ')}
+  `;
+}
