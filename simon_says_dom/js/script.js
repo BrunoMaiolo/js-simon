@@ -39,3 +39,18 @@ function startGame() {
   numbersList.classList.add('d-none');
   answersForm.classList.remove('d-none');
 }
+
+//prendere i numeri dal giocatore//
+answersForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const inputs = answersForm.querySelectorAll('input');
+  const userNumbers = [];
+
+  inputs.forEach(input => {
+    userNumbers.push(Number(input.value));
+  });
+
+  checkResults(userNumbers);
+});
+
