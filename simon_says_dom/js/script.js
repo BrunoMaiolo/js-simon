@@ -20,3 +20,7 @@ randomNumbers.forEach(num => {
   li.textContent = num;
   numbersList.appendChild(li);
 });
+
+//countdown//
+let timeLeft = 8;
+countdownEl.textContent = timeLeft;
