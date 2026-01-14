@@ -33,3 +33,9 @@ const timer = setInterval(() => {
     startGame();
   }
 }, 1000);
+
+//fase dopo lo scadere dei 30 secondi//
+function startGame() {
+  numbersList.classList.add('d-none');
+  answersForm.classList.remove('d-none');
+}
