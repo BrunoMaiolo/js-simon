@@ -15,3 +15,8 @@ while (randomNumbers.length < 5) {
 }
 
 //mostrare i numeri in pagina//
+randomNumbers.forEach(num => {
+  const li = document.createElement('li');
+  li.textContent = num;
+  numbersList.appendChild(li);
+});
