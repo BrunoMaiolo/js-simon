@@ -24,3 +24,12 @@ randomNumbers.forEach(num => {
 //countdown//
 let timeLeft = 8;
 countdownEl.textContent = timeLeft;
+const timer = setInterval(() => {
+  timeLeft--;
+  countdownEl.textContent = timeLeft;
+
+  if (timeLeft === 0) {
+    clearInterval(timer);
+    startGame();
+  }
+}, 1000);
